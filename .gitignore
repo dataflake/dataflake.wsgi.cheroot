@@ -1,0 +1,16 @@
+*.egg-info
+*.pyc
+*.pyo
+*$py.class
+*.so
+__pycache__
+.installed.cfg
+.mr.developer.cfg
+.tox/
+bin/
+build/
+eggs/
+develop-eggs/
+dist/
+docs/_build/
+parts/
