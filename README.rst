@@ -4,6 +4,10 @@
 .. image:: https://coveralls.io/repos/github/dataflake/dataflake.wsgi.cheroot/badge.svg?branch=master
    :target: https://coveralls.io/github/dataflake/dataflake.wsgi.cheroot?branch=master
 
+.. image:: https://readthedocs.org/projects/dataflakewsgicheroot/badge/?version=latest
+   :target: https://dataflakewsgicheroot.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
+
 .. image:: https://img.shields.io/pypi/v/dataflake.wsgi.cheroot.svg
    :target: https://pypi.org/project/dataflake.wsgi.cheroot/
    :alt: Current version on PyPI
