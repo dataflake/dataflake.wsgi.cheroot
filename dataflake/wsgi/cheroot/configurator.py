@@ -21,11 +21,16 @@ def mkzope():
     """ Create a WSGI configuration for Zope and cheroot """
     # We want to override the source of the skeleton files.
     # Make sure they are not already passed in.
+    already_set = False
 
-    args = sys.argv[1:]
-    if not ('-s' in args or '--skelsrc' in args):
-        # Only go into action of the skelton source has not been passed in.
-        skelsrc = os.path.join(os.path.dirname(__file__), "skel")
+    for arg in sys.argv[1:]:
+        if arg in ('-s', '--skelsrc') or arg.startswith('--skelsrc'):
+            already_set = True
+            break
+
+    if not already_set:
+        # Only go into action of the skeleton source has not been passed in.
+        skelsrc = os.path.join(os.path.dirname(__file__), 'skel')
         sys.argv.extend(['-s', skelsrc])
 
     return mkwsgiinstance.main()
