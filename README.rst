@@ -1,5 +1,5 @@
-.. image:: https://travis-ci.org/dataflake/dataflake.wsgi.cheroot.svg?branch=master
-   :target: https://travis-ci.org/dataflake/dataflake.wsgi.cheroot
+.. image:: https://travis-ci.com/dataflake/dataflake.wsgi.cheroot.svg?branch=master
+   :target: https://travis-ci.com/dataflake/dataflake.wsgi.cheroot
 
 .. image:: https://coveralls.io/repos/github/dataflake/dataflake.wsgi.cheroot/badge.svg?branch=master
    :target: https://coveralls.io/github/dataflake/dataflake.wsgi.cheroot?branch=master
