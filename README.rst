@@ -4,12 +4,12 @@
 .. image:: https://coveralls.io/repos/github/dataflake/dataflake.wsgi.cheroot/badge.svg?branch=master
    :target: https://coveralls.io/github/dataflake/dataflake.wsgi.cheroot?branch=master
 
-.. image:: https://img.shields.io/pypi/v/Products.ZSQLMethods.svg
-   :target: https://pypi.org/project/Products.ZSQLMethods/
+.. image:: https://img.shields.io/pypi/v/dataflake.wsgi.cheroot.svg
+   :target: https://pypi.org/project/dataflake.wsgi.cheroot/
    :alt: Current version on PyPI
 
-.. image:: https://img.shields.io/pypi/pyversions/Products.ZSQLMethods.svg
-   :target: https://pypi.org/project/Products.ZSQLMethods/
+.. image:: https://img.shields.io/pypi/pyversions/dataflake.wsgi.cheroot.svg
+   :target: https://pypi.org/project/dataflake.wsgi.cheroot/
    :alt: Supported Python versions
 
 dataflake.wsgi.cheroot

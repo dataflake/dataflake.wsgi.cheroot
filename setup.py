@@ -66,6 +66,10 @@ setup(
         'cheroot',
         'paste',  # For the translogger logging filter
     ],
+    extras_require={
+      	'docs': ['Sphinx < 2;python_version < "3"',
+                 'Sphinx;python_version >= "3"'],
+    },
     entry_points = """
     [paste.server_runner]
     main = dataflake.wsgi.cheroot:serve_paste
