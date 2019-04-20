@@ -3,7 +3,8 @@
 .. toctree::
    :maxdepth: 2
 
-   install
+   installation
+   usage
    development
    changes
 
