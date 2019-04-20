@@ -68,7 +68,8 @@ setup(
     ],
     extras_require={
       	'docs': ['Sphinx < 2;python_version < "3"',
-                 'Sphinx;python_version >= "3"'],
+                 'Sphinx;python_version >= "3"',
+                 'sphinx_rtd_theme'],
     },
     entry_points = """
     [paste.server_runner]
