@@ -32,6 +32,7 @@ setup(
     version=VERSION,
     url=URL,
     project_urls={
+        'Documentation': 'https://dataflakewsgicheroot.readthedocs.io',
         'Issue Tracker': '%s/issues' % URL,
         'Sources': URL,
     },
