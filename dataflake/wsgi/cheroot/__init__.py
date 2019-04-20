@@ -11,7 +11,28 @@
 # FOR A PARTICULAR PURPOSE.
 #
 ##############################################################################
+import logging
+
 from cheroot import wsgi
+
+
+CHEROOT_ERROR_LOGGER = logging.getLogger('cheroot.error')
+
+
+class LoggingWSGIServer(wsgi.Server):
+    """ Fix up how cheroot does logging """
+
+    def error_log(self, msg='', level=logging.INFO, traceback=False):
+        """ Log error messages
+
+        Overridden to use the Python logging module instead of sys.stderr
+
+        Args:
+            msg (str): error message
+            level (int): logging level
+            traceback (bool): add traceback to output or not
+        """
+        CHEROOT_ERROR_LOGGER.log(level, msg, exc_info=traceback)
 
 
 def serve_paste(app, global_conf, **kw):
@@ -32,6 +53,11 @@ def serve_paste(app, global_conf, **kw):
     port = kw.get('port', '8080')
     address = (host, int(port))
 
-    server = wsgi.Server(address, app)
-    server.start()
+    server = LoggingWSGIServer(address, app)
+    try:
+        server.start()
+    except KeyboardInterrupt:
+        # Without this explicit exception handler, the server cannot be stopped
+        # with <CTRL-C> when it runs in the foreground.
+        server.stop()
     return 0
