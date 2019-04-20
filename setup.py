@@ -64,6 +64,7 @@ setup(
     install_requires=[
         'setuptools',
         'cheroot',
+        'paste',  # For the translogger logging filter
     ],
     entry_points = """
     [paste.server_runner]
