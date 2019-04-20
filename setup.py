@@ -65,16 +65,23 @@ setup(
         'setuptools',
         'cheroot',
         'paste',  # For the translogger logging filter
+        'Zope',  # To avoid reinventing the skeleton creation
     ],
     extras_require={
-      	'docs': ['Sphinx < 2;python_version < "3"',
-                 'Sphinx;python_version >= "3"',
-                 'sphinx_rtd_theme'],
+      	'docs': [
+            'Sphinx < 2;python_version < "3"',
+            'Sphinx;python_version >= "3"',
+            'sphinx_rtd_theme'
+        ],
     },
-    entry_points = """
-    [paste.server_runner]
-    main = dataflake.wsgi.cheroot:serve_paste
-    """,
+    entry_points = {
+        'paste.server_runner': [
+            'main=dataflake.wsgi.cheroot:serve_paste'
+        ],
+        'console_scripts': [
+            'mkcherootinstance=dataflake.wsgi.cheroot.configurator:mkzope',
+        ],
+    },
     include_package_data=True,
     zip_safe=False,
 )
