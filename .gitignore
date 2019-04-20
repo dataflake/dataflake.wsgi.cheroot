@@ -4,9 +4,11 @@
 *$py.class
 *.so
 __pycache__
+.coverage*
 .installed.cfg
 .mr.developer.cfg
 .tox/
+coverage.xml
 inituser
 bin/
 build/

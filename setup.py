@@ -11,6 +11,7 @@
 # FOR A PARTICULAR PURPOSE.
 #
 ##############################################################################
+import os
 
 from setuptools import find_packages
 from setuptools import setup
@@ -68,15 +69,15 @@ setup(
         'Zope',  # To avoid reinventing the skeleton creation
     ],
     extras_require={
-      	'docs': [
+        'docs': [
             'Sphinx < 2;python_version < "3"',
             'Sphinx;python_version >= "3"',
-            'sphinx_rtd_theme'
+            'sphinx_rtd_theme',
         ],
     },
-    entry_points = {
+    entry_points={
         'paste.server_runner': [
-            'main=dataflake.wsgi.cheroot:serve_paste'
+            'main=dataflake.wsgi.cheroot:serve_paste',
         ],
         'console_scripts': [
             'mkcherootinstance=dataflake.wsgi.cheroot.configurator:mkzope',
