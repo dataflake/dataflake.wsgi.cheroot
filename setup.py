@@ -38,7 +38,7 @@ setup(
     description='PasteDeploy entry point for the cheroot WSGI server',
     author='Jens Vagelpohl and Contributors',
     author_email='jens@netz.ooo',
-    long_description=(read('README.rst') + '\n\n' + read('CHANGES.txt')),
+    long_description=(read('README.rst') + '\n\n' + read('CHANGES.rst')),
     packages=find_packages(),
     namespace_packages=['dataflake', 'dataflake.wsgi'],
     classifiers=[
