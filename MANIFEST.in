@@ -1,7 +1,6 @@
 # Generated from:
 # https://github.com/zopefoundation/meta/tree/master/config/zope-product
 include *.rst
-include *.txt
 include buildout.cfg
 include tox.ini
 
