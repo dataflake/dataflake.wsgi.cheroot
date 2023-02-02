@@ -19,7 +19,6 @@ from setuptools import setup
 
 NAME = 'dataflake.wsgi.cheroot'
 URL = 'https://github.com/dataflake/%s' % NAME
-VERSION = '1.1.dev0'
 
 
 def read(*rnames):
@@ -29,7 +28,7 @@ def read(*rnames):
 
 setup(
     name=NAME,
-    version=VERSION,
+    version='2.0.dev0',
     url=URL,
     project_urls={
         'Documentation': 'https://dataflakewsgicheroot.readthedocs.io',
@@ -64,6 +63,7 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
         'Programming Language :: Python :: Implementation :: CPython',
         'Topic :: Internet :: WWW/HTTP :: WSGI',
     ],
