@@ -1,5 +1,5 @@
-.. image:: https://travis-ci.com/dataflake/dataflake.wsgi.cheroot.svg?branch=master
-   :target: https://travis-ci.com/dataflake/dataflake.wsgi.cheroot
+.. image:: https://github.com/dataflake/dataflake.wsgi.cheroot/actions/workflows/tests.yml/badge.svg
+   :target: https://github.com/dataflake/dataflake.wsgi.cheroot/actions/workflows/tests.yml
 
 .. image:: https://coveralls.io/repos/github/dataflake/dataflake.wsgi.cheroot/badge.svg?branch=master
    :target: https://coveralls.io/github/dataflake/dataflake.wsgi.cheroot?branch=master
@@ -17,8 +17,9 @@
    :alt: Supported Python versions
 
 
-dataflake.wsgi.cheroot
-======================
+========================
+ dataflake.wsgi.cheroot
+========================
 
 This package provides a PasteDeploy-compatible entry point to easily integrate
 the `cheroot WSGI server <https://github.com/cherrypy/cheroot>`_ into an
