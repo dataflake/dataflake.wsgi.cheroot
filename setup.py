@@ -24,7 +24,7 @@ def read(*rnames):
 
 setup(
     name='dataflake.wsgi.cheroot',
-    version='2.1',
+    version='2.2.dev0',
     url='https://github.com/dataflake/dataflake.wsgi.cheroot',
     project_urls={
         'Documentation': 'https://dataflakewsgicheroot.readthedocs.io',
